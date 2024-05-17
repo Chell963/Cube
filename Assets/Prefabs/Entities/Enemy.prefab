@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8136354002270408397}
   hitPoints: 1
-  entitySpeed: 1.25
+  entitySpeed: 125
   rotationSpeed: 4
   rotationModifier: 90
 --- !u!50 &8136354002270408397

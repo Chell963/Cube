@@ -35,7 +35,9 @@ namespace Entities
             Vector2 forwardDirection = transform.up;
             IsMoving = !IsDead;
             rb.velocity = IsMoving 
-                ? new Vector2(forwardDirection.x * entitySpeed, forwardDirection.y * entitySpeed) 
+                ? new Vector2(
+                    forwardDirection.x * entitySpeed * Time.fixedDeltaTime, 
+                    forwardDirection.y * entitySpeed * Time.fixedDeltaTime) 
                 : Vector2.zero;
         }
         

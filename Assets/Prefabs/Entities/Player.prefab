@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4842228015722371743}
   hitPoints: 3
-  entitySpeed: 10
+  entitySpeed: 300
   rotationSpeed: 8
   rotationModifier: 90
   projectilePrefab: {fileID: 1387685694499600910, guid: eabc0b7df0633734b85370639f8ab5c4, type: 3}

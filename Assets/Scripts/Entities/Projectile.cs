@@ -16,7 +16,9 @@ namespace Entities
         private void Move()
         {
             Vector2 forwardDirection = transform.up;
-            rb.velocity = new Vector2(forwardDirection.x * projectileSpeed, forwardDirection.y * projectileSpeed);
+            rb.velocity = new Vector2(
+                forwardDirection.x * projectileSpeed * Time.fixedDeltaTime, 
+                forwardDirection.y * projectileSpeed * Time.fixedDeltaTime);
         }
 
         private async void DestroyCountdown()

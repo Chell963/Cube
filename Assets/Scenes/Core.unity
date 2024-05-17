@@ -2126,9 +2126,9 @@ MonoBehaviour:
   entitiesParent: {fileID: 726198453}
   playerCamera: {fileID: 519420033}
   playerJoystick: {fileID: 8170153792530337149}
-  maxEnemiesCount: 5
+  maxEnemiesCount: 10
   minEnemyCountdown: 1
-  maxEnemyCountdown: 4
+  maxEnemyCountdown: 3
 --- !u!1 &2131081076
 GameObject:
   m_ObjectHideFlags: 0

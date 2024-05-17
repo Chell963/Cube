@@ -41,7 +41,9 @@ namespace Entities
             Vector2 joystickDirection = _floatingJoystick.Direction;
             IsMoving = joystickDirection.x != 0 || joystickDirection.y != 0;
             rb.velocity = IsMoving 
-                ? new Vector2(joystickDirection.x * entitySpeed, joystickDirection.y * entitySpeed) 
+                ? new Vector2(
+                    joystickDirection.x * entitySpeed * Time.fixedDeltaTime, 
+                    joystickDirection.y * entitySpeed * Time.fixedDeltaTime) 
                 : Vector2.zero;
         }
         

@@ -52,7 +52,7 @@ namespace Entities
             Vector2 vectorToTarget = entityPosition - targetPosition;
             float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg + rotationModifier;
             Quaternion rotationToTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-            return Quaternion.Slerp(entityRotation,rotationToTarget, rotationSpeed * Time.deltaTime);
+            return Quaternion.Slerp(entityRotation,rotationToTarget, rotationSpeed * Time.fixedDeltaTime);
         }
     }
 }

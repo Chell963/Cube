@@ -51,6 +51,8 @@ namespace Service
 
         private void Start()
         {
+            Application.targetFrameRate = 45;
+            
             startScreen.gameObject.SetActive(true);
             endScreen.gameObject.SetActive(false);
             playerJoystick.gameObject.SetActive(false);

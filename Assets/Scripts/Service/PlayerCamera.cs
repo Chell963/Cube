@@ -23,7 +23,8 @@ namespace Service
             Vector3 cameraPosition = transform.position;
             Vector2 playerPosition = _player.transform.position;
             Vector2 desiredPosition = playerPosition + offset;
-            Vector2 smoothedPosition = Vector2.SmoothDamp(cameraPosition, desiredPosition, ref _velocity, smoothSpeed);
+            Vector2 smoothedPosition = Vector2.SmoothDamp(cameraPosition, desiredPosition, ref _velocity, 
+                smoothSpeed * Time.deltaTime);
             transform.position = new Vector3(smoothedPosition.x,smoothedPosition.y, cameraPosition.z);
         }
 
